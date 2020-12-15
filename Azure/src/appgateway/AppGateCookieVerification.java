@@ -9,6 +9,7 @@ import org.apache.commons.httpclient.params.HttpMethodParams;
 
 /**
  * AzureにApplicationGatewayを作成しBackendにサーバーを用意<br>
+ * Cookie利用のセッションアフィニティを設定<br>
  * 初回接続時にレスポンスからCookieを取り出し次回以降の接続にCookieを詰め、同一のBackendサーバーへリクエストを送る<br>
  * Azureのログで接続されたサーバーを確認<br>
  * CookieのNameはApplicationGatewayAffinityとして設定されてくる<br>
